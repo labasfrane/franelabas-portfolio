@@ -16,7 +16,7 @@ const Hero = ({ pageInfo }: Props) => {
     delaySpeed: 2000,
   });
   return (
-    <div className="h-screen flex flex-col space-y-8 justify-center items-center text-center overflow-hidden pt-10">
+    <div className="h-[100dvh] flex flex-col space-y-8 justify-center items-center text-center overflow-hidden pt-10">
       <BackgroundAnimation />
       <Image
         src={urlFor(pageInfo?.heroImage).url()}

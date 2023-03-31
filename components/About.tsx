@@ -12,7 +12,7 @@ const About = ({ pageInfo }: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="relative h-screen flex flex-col md:flex-row text-center md:text-left max-w-7xl px-3 sm:px-10 justify-evenly mx-auto items-center"
+      className="relative h-[100dvh] flex flex-col md:flex-row text-center md:text-left max-w-7xl px-3 sm:px-10 justify-evenly mx-auto items-center"
     >
       <h3 className="sectionHeader">about</h3>
 

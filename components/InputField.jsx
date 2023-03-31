@@ -60,8 +60,8 @@ const InputField = ({
     <label
       className={
         isFullSpan
-          ? "grid grid-rows-2 col-span-2"
-          : "grid grid-rows-2 col-span-2 sm:col-span-1"
+          ? "grid grid-rows-customRow sm:grid-rows-2 col-span-2"
+          : "grid grid-rows-customRow sm:grid-rows-2 col-span-2 sm:col-span-1"
       }
       htmlFor={id}
     >

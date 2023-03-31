@@ -25,10 +25,10 @@ export default function Home({ socials, pageInfo, skills, projects }: Props) {
   return (
     <>
       <Head>
-        <title>My page title</title>
+        <title>Frane Labas Portfolio</title>
       </Head>
 
-      <main className="bg-customDark text-customGray h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin sm:scrollbar scrollbar-thumb-customGray scroll-smooth scrollbar-track-customDarkGray">
+      <main className="bg-customDark text-customGray h-[100dvh] snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin sm:scrollbar scrollbar-thumb-customGray scroll-smooth scrollbar-track-customDarkGray">
         <Header socials={socials} />
         <section id="hero" className="snap-center">
           <Hero pageInfo={pageInfo} />

@@ -19,6 +19,8 @@ module.exports = {
         // Simple 8 row grid
         8: "repeat(8, minmax(0, 1fr))",
 
+        customRow: "repeat(2, minmax(2rem, 2.3rem))",
+
         // Complex site-specific row configuration
         projectLayout: "4rem 1fr 1fr",
       },

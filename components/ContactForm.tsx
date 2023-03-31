@@ -31,7 +31,7 @@ const ContactForm = () => {
     <FormProvider {...methods}>
       <form
         onSubmit={methods.handleSubmit(sendEmail)}
-        className="grid grid-cols-1 sm:grid-cols-2 gap-y-1 sm:gap-x-3"
+        className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-3"
       >
         <InputField
           registerName="name"

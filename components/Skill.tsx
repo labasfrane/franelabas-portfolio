@@ -1,6 +1,5 @@
 import Image from "next/image";
 import urlFor from "@/lib/urlFor";
-import { motion } from "framer-motion";
 import { Skill } from "@/typings";
 
 type Props = {
@@ -8,17 +7,9 @@ type Props = {
   delay?: boolean;
 };
 
-function Skill({ skill, delay }: Props) {
+function Skill({ skill }: Props) {
   return (
-    <motion.div
-      initial={{
-        x: -300,
-        opacity: 0,
-      }}
-      transition={{ duration: delay ? 1.8 : 1 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      className="group relative flex cursor-pointer "
-    >
+    <div className="group relative flex cursor-pointer">
       <Image
         src={urlFor(skill?.image)?.url()}
         alt={skill?._id}
@@ -34,7 +25,7 @@ function Skill({ skill, delay }: Props) {
           </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

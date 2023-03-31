@@ -8,9 +8,9 @@ type Props = {
 
 const ContactMe = ({ pageInfo }: Props) => {
   return (
-    <div className="h-screen relative flex flex-col text-center max-w-7xl justify-evenly mx-auto items-center">
+    <div className="h-[100dvh] relative flex flex-col text-center max-w-7xl justify-evenly mx-auto items-center">
       <h3 className="sectionHeader">Contact</h3>
-      <div className="flex flex-col space-y-5 mt-24">
+      <div className="flex flex-col space-y-3 mt-24">
         <div className="flex items-center space-x-5 justify-center md:justify-start">
           <EnvelopeIcon className="h-7 w-7" />
           <a href={`mailto:${pageInfo?.email}`}>{pageInfo?.email}</a>
@@ -19,10 +19,10 @@ const ContactMe = ({ pageInfo }: Props) => {
           <PhoneIcon className="h-7 w-7" />
           <a href={`tel:${pageInfo?.phoneNumber}`}>{pageInfo?.phoneNumber}</a>
         </div>{" "}
-        <div className="flex items-center space-x-5 justify-center md:justify-start">
+        {/* <div className="flex items-center space-x-5 justify-center md:justify-start">
           <MapPinIcon className="h-7 w-7" />
           <a href="https://goo.gl/maps/FtDnih2E1MoqPE889">Split, Croatia</a>
-        </div>
+        </div> */}
       </div>
 
       <ContactForm />
